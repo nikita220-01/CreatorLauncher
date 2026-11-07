@@ -1,0 +1,22 @@
+# Python script to generate App.tsx
+import os
+script_path = r'd:\.cline\CreatorLauncher\CreatorLauncher\src\App.tsx'
+f = open(script_path, 'w', encoding='utf-8')
+f.write('import React, { useState } from "react"\n')
+f.write('import { User, Package, Wrench, Settings } from "lucide-react"\n')
+f.write('\n')
+f.write('function App() {\n')
+f.write('  const [activeTab, setActiveTab] = useState<"cabinet" | "mods" | "constructor" | "settings">("cabinet");\n')
+f.write('  const [nickname, setNickname] = useState<"Игрок">("Игрок");\n')
+f.write('  const [activePose, setActivePose] = useState<"thinking" | "sitting" | "holding">("thinking");\n')
+f.write('\n')
+f.write('  const icons = [\n')
+f.write('    { name: "cabinet", Icon: User },\n')
+f.write('    { name: "mods", Icon: Package },\n')
+f.write('    { name: "constructor", Icon: Wrench },\n')
+f.write('    { name: "settings", Icon: Settings }\n')
+f.write('  ];\n')
+f.write('\n')
+f.write('  return (\n')
+f.write('    <div\n')
+f.write('      style={{')
