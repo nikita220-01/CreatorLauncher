@@ -353,7 +353,8 @@ function App() {
         >
           <option>OptiFine 1.21.11</option>
           <option>1.21.11</option>
-          <option>Forge 26.1.1</option>
+          <option>26.2</option>
+          <option>26.3</option>
           <option>Fabric 1.20.4</option>
           <option>Fabric 1.20.1</option>
         </select>
